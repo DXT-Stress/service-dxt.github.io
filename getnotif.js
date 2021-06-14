@@ -1,2 +1,0 @@
-function getNotif(string){var data=string.split(';');var type;var property=["success","error","warning","info"];toastr.options={"closeButton":false,"debug":false,"newestOnTop":false,"progressBar":false,"positionClass":"toast-top-right","preventDuplicates":false,"onclick":null,"showDuration":"300","hideDuration":"1000","timeOut":"3000","extendedTimeOut":"1000","showEasing":"swing","hideEasing":"linear","showMethod":"fadeIn","hideMethod":"fadeOut"};property.forEach(function(element,index){if(property[index]==data[0])
-type=element;});toastr[type](data[1],data[0]);}
